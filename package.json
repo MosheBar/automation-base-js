@@ -1,0 +1,26 @@
+{
+  "name": "automation-base-js",
+  "version": "1.3.0",
+  "description": "automation-base-js",
+  "main": "index.js",
+  "scripts": {
+    "base_test": "cross-env npx mocha test/**/*.js -A -g 'Test:' --no-timeouts -p -j 1 --reporter mocha-multi-reporters --reporter-options configFile=multi_reporters.json --require core/hooks/base_hook.js"
+  },
+  "author": "MosheBar",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "chromedriver": "latest",
+    "cross-env": "^7.0.3",
+    "mocha-allure-reporter": "^1.4.0",
+    "selenium-webdriver": "^4.1.0",
+    "webdriver-manager": "^12.1.8"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.3",
+    "mocha-multi-reporters": "^1.5.1"
+  },
+  "keywords": [
+    "automation-base-js"
+  ]
+}
